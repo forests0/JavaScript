@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    background-image: url(table.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bold;
+}
+img {
+    object-fit: cover;
+    margin: 0 auto;
+}
+#blj {
+    color: gold;
+}
+#wnt {
+    font-style: italic;
+}
+h2 {
+    color: white;
+}
+button {
+    color: #016f32;
+    width: 150px;
+    background-color: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+}
