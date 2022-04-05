@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let today = new Date()
+        let year = today.getFullYear()
+        let month = prompt('태어난 달 입력')-1
+        let day = prompt('태어난 일  입력')
+
+        let birthday = new Date(year, month, day)
+        let diffDate = Math.ceil((birthday.getTime() - today.getTime) / (24*60*60*1000))
+
+        if(diffDate > 0) {
+            document.write(`<h2>생일이 ${diffDate}일 남았습니다</h2>`)
+        }
+        else if(diffDate == 0) {
+            document.write(`<h2>생일 축하합니다!</h2>`)
+        }
+        else {
+            document.write(`<h2>생일이 ${Math.abs(diffDate)}일 지났습니다</h2>`)
+        }
+    </script>
+</body>
+</html>
