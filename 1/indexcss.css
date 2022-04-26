@@ -1,0 +1,24 @@
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    flex-direction: row;
+    /*row, column, row-reverse, column-reverse*/
+    justify-content: flex-end;
+}
+
+.container > div {
+    flex: 1;
+}
+
+.container > .search {
+    flex: 2;
+}
+/*
+.logout {
+    margin-left: auto;
+}
+
+.home {
+    margin-right: auto;
+}
+*/
