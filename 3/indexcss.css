@@ -1,0 +1,23 @@
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+}
+
+.container > div {
+    width: 300px;
+}
+
+.home {
+    /* flex: 1 1 200px; */
+    
+    flex-grow : 1;
+    flex-shrink: 0;
+    flex-basis: 200px; 
+    
+}
+
+.search {
+    flex-grow : 1;
+    flex-shrink: 2;
+    flex-basis: 200px; 
+}
