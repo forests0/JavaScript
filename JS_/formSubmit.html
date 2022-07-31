@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks Submit</title>
+</head>
+<body>
+    <h1>Tasks</h1>
+    <ul id="tasks"></ul>
+    <input type="text" id="task" placeholder="New Task">
+    <input type="submit" id="submit">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const submit = document.querySelector('#submit')
+            const newTesk = document.querySelector('#task')
+
+            submit.disabled = true;
+            
+            newTesk.onkeyup = () => {
+                if(newTesk.value.length > 0) {
+                    submit.disabled = false;
+                }
+                else {
+                    submit.disabled = true;
+                }
+            }
+
+        document.querySelector('form').onsubmit = () => {
+            const task = newTesk.value
+            const li = document.createElement('li')
+            li.innerHTML = task
+
+            document.querySelector('#tasks').append(li)
+            newTesk.value = ' '
+            submit.disabled = true;
+            return false;
+
+            }
+        })
+    </script>
+</body>
+</html>
