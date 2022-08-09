@@ -1,0 +1,115 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+nav {
+  padding: 22px 30px;
+  height: 70px;
+  display: flex;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.nav--logo {
+  max-width: 100px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content--photo {
+  width: 400px;
+  height: 232px;
+  align-self: center;
+}
+
+.content--header {
+  font-family: "Poppins";
+  font-style: normal;
+  width: 347px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 110%;
+}
+
+.content--text {
+  width: 320px;
+  height: 56px;
+  margin-top: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 110%;
+}
+
+.gray {
+  color: #918e9b;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+section {
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  flex: 0 0 auto;
+  width: 175px;
+  font-size: 12px;
+}
+
+.card--image {
+  height: 235px;
+  width: 100%;
+  border-radius: 9px;
+}
+
+.card--price {
+  margin-top: auto;
+}
+
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.card--star {
+  height: 14px;
+}
+
+.cards--list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
