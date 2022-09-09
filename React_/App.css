@@ -1,0 +1,32 @@
+.App {
+    height: 400px;
+    font-family: sans-serif;
+    text-align: left;
+    background-color: #21222a;
+    color: white;
+    padding: 25px;
+  }
+  .h1-title {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  li::marker {
+    font-size: 1.3rem;
+    color: #61dafb;
+  }
+  
+  .head-h3 {
+    color: #61dafb;
+    padding: 3px;
+    width: 280px;
+  }
+  .head-div {
+    display: flex;
+  }
+  .head-righth3 {
+    text-align: right;
+    margin-right: auto;
+  }
+  
